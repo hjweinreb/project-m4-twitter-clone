@@ -44,6 +44,7 @@ const users = {
   },
 };
 
+
 const tweets = {
   // TreasuryMog
   '1209791721099411456r1': {
@@ -178,7 +179,7 @@ My highlight has been coming back to work with my very own Palmy HQ 🤩`,
     authorHandle: 'giantcat9',
     timestamp: '2020-01-06T09:20:00+00:00',
     sortedTimestamp: '2020-01-06T09:20:00+00:00',
-    likedBy: [],
+    likedBy: ['diplomog'],
     retweetedBy: ['diplomog'],
     status: `JAS 39 Gripen`,
     media: [

@@ -60,6 +60,7 @@ router.get('/api/tweet/:tweetId', (req, res) => {
 router.post('/api/tweet', (req, res) => {
   const newTweet = createTweet(req.body.status, { isRetweet: false });
   data.tweets[newTweet.id] = newTweet;
+  console.log("new tweet being sent to server", req.body)
 
   return simulateProblems(res, { tweet: newTweet });
 });
@@ -69,6 +70,7 @@ router.post('/api/tweet', (req, res) => {
  */
 router.put('/api/tweet/:tweetId/like', (req, res) => {
   const { like } = req.body;
+  console.log(req)
 
   const tweet = data.tweets[req.params.tweetId];
 
